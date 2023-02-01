@@ -1,0 +1,16 @@
+# Insiders
+# --------
+
+git+https://${GH_TOKEN_MATERIAL_INSIDERS}@github.com/squidfunk/mkdocs-material-insiders.git@9.0.9-insiders-4.29.0#egg=mkdocs-material
+
+# Development
+# -----------------------
+pre-commit>=2.20,<3.1
+
+# Project requirements
+# -----------------------
+mkdocs-minify-plugin<0.7
+mkdocs-git-revision-date-localized-plugin>=1,<1.2
+
+CairoSVG>=2.5,<3
+Pillow>=9.4,<9.5

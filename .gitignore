@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# -- CUSTOM --
+**/*.md
+!README.md

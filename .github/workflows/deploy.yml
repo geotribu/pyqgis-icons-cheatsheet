@@ -3,11 +3,6 @@ name: "🚀 Build & publish"
 on:
   push:
     branches: [main]
-    paths:
-      - ".github/workflows/deploy.yml"
-      - "docs/**"
-      - "mkdocs.yml"
-      - "requirements*.txt"
 
   schedule:
     - cron: "0 0 1 * *"  # monthly

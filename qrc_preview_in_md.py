@@ -40,8 +40,8 @@ if not root.tag == "RCC":
 # prepare markdown file
 out_markdown = "---\ncomments:\n  - true"
 out_markdown += "\ndescription: Cheatsheet of embedded images in QGIS with both QIcon and QPixmap syntax. Useful for PyQGIS development, especially Python plugins."
-out_markdown += "\ntags:\n\t- QGIS\n\t- PyQGIS\n\t- PyQt\n\t- Python"
-out_markdown += "\nhide:\n\t- tags"
+out_markdown += "\ntags:\n    - QGIS\n    - PyQGIS\n    - PyQt\n    - Python"
+out_markdown += "\nhide:\n    - tags"
 out_markdown += "\n---\n"
 out_markdown += """\n# QGIS embedded images\n\nRemember how to use it:\n\n```python\nfrom qgis.core import QgsApplication\nfrom qgis.PyQt.QtGui import QIcon, QPixmap\n```\n"""
 out_markdown += '\n--8<-- "../README.md:Credits"\n'

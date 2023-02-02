@@ -61,13 +61,13 @@ theme:
     - content.code.copy
     - navigation.instant
     - navigation.path
-    - navigation.prune
     - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
+    - toc.integrate
   font: Ubuntu
   language: en
   logo: theme/assets/images/pyqgis.png
@@ -148,4 +148,5 @@ markdown_extensions:
       permalink: "#"
 
 nav:
-  - index.md
+  - Credits: credits.md
+  - Cheatsheet: index.md

@@ -50,7 +50,7 @@ md_table_header = (
     "| Preview | Using QgsApplication | QIcon/QPixmap |\n"
     "| ----------- | ------- | ------- |\n"
 )
-md_table_row_tpl = """| ![{}]({}){} | `#!python QIcon(QgsApplication.iconPath(":{}"))` | `#!python QIcon(":{}")`<br/>`QPixmap(":{}")` |\n"""
+md_table_row_tpl = """| ![{}]({}){} | `#!python QIcon(QgsApplication.iconPath("{}"))` | `#!python QIcon(":{}")`<br/>`QPixmap(":{}")` |\n"""
 
 # iterate over resources
 for prefix in root:

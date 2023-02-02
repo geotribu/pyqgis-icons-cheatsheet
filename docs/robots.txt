@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://geotribu.github.io/pyqgis-icons-cheatsheet/sitemap.xml

@@ -150,3 +150,4 @@ markdown_extensions:
 nav:
   - Credits: credits.md
   - Cheatsheet: index.md
+  - Geotribu: http://geotribu.fr/

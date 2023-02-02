@@ -1,4 +1,21 @@
 {
+    // Editor
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "files.associations": {
+        "./requirements*.txt": "pip-requirements"
+    },
+    // Python
+    "python.defaultInterpreterPath": ".venv/bin/python",
+    "python.formatting.provider": "black",
+    "python.linting.enabled": false,
+    "yaml.customTags": [
+        "!ENV scalar",
+        "!ENV sequence",
+        "tag:yaml.org,2002:python/name:materialx.emoji.to_svg",
+        "tag:yaml.org,2002:python/name:materialx.emoji.twemoji",
+        "tag:yaml.org,2002:python/name:pymdownx.superfences.fence_code_format"
+    ],
     "yaml.schemas": {
         "https://json.schemastore.org/github-workflow.json": "file:///home/jmo/Git/Geotribu/pyqgis-icons-cheatsheet/.github/workflows/deploy.yml"
     }

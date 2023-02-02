@@ -35,6 +35,11 @@ Content and methodolgy under [Attribution-ShareAlike 4.0 International (CC BY-SA
 - Python 3.10+
 - network connection authorized to github.com
 - [Material for Mkdocs Insiders](https://squidfunk.github.io/mkdocs-material/insiders/) (sponsorware) token set as environment variable `GH_TOKEN_MATERIAL_INSIDERS`
+- [dependencies for images processing listed on theme documentation](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing/). Typically, on Ubuntu:
+
+    ```sh
+    sudo apt install libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev pngquant
+    ```
 
 ### Setup
 

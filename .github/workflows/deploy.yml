@@ -73,6 +73,7 @@ jobs:
 
       - name: Build static website
         run: |
+          cp README.md docs/credits.md
           mkdocs build --clean --config-file mkdocs.yml --verbose --strict
         env:
           MKDOCS_ENABLE_PLUGIN_CARDS: true

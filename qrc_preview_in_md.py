@@ -47,7 +47,8 @@ out_markdown += """\n# QGIS embedded images\n\nRemember how to use it:\n\n```pyt
 out_markdown += '\n--8<-- "../README.md:Credits"\n'
 out_markdown += "\n[Like it? Leave us a reaction or comment :fontawesome-solid-comments:](#__comments){: .md-button .md-button--primary }\n{: align=middle }\n\n"
 md_table_header = (
-    "| Preview | Using QgsApplication | QIcon/QPixmap |\n" "| ----------- | ------- | ------- |\n"
+    "| Preview | Using QgsApplication | QIcon/QPixmap |\n"
+    "| ----------- | ------- | ------- |\n"
 )
 md_table_row_tpl = """| ![{}]({}){} | `#!python QIcon(QgsApplication.iconPath(":{}"))` | `#!python QIcon(":{}")`<br/>`QPixmap(":{}")` |\n"""
 
@@ -60,9 +61,11 @@ for prefix in root:
 
         # iterate over files under prefix, after sorting them by filepath
         previous_subfolder = ""
-        for binimg in sorted(prefix.findall("file"), key=lambda x: x.text.rsplit("/", 1)[0]):
+        for binimg in sorted(
+            prefix.findall("file"), key=lambda x: x.text.rsplit("/", 1)[0]
+        ):
             # build path to image
-            img_path_abs = urljoin(base_path,  f"{prefix_name}/{binimg.text}")
+            img_path_abs = urljoin(base_path, f"{prefix_name}/{binimg.text}")
             img_path_rel = Path(prefix_name, binimg.text)
 
             # use subfolder as markdown level 3

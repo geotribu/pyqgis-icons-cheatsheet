@@ -7,7 +7,9 @@
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
-Script to convert a remote QRC (Qt Resources Collection files) into a markdown table to preview images. This example covers [QGIS project](https://github.com/qgis/QGIS/).
+Script to convert a remote QRC (Qt Resources Collection files) into a markdown table to preview images.
+
+This project covers [QGIS project](https://github.com/qgis/QGIS/) and generates a cheatsheet published on <https://geotribu.github.io/pyqgis-icons-cheatsheet/>.
 
 ## Credits
 
@@ -19,8 +21,8 @@ Content and methodolgy under [Attribution-ShareAlike 4.0 International (CC BY-SA
 ### Related contents
 
 - blog posts/tutorials (in French :fr:):
-    - [How to use embedded images in PyQGIS?](http://geotribu.fr/articles/2021/2021-01-19_pyqgis_utiliser_icones_integrees/)
-    - [How to generate a table of embedded images in PyQGIS?](http://geotribu.fr/articles/2021/2021-02-02_pyqgis_previsualiser_images_integrees/)
+  - [How to use embedded images in PyQGIS?](http://geotribu.fr/articles/2021/2021-01-19_pyqgis_utiliser_icones_integrees/)
+  - [How to generate a table of embedded images in PyQGIS?](http://geotribu.fr/articles/2021/2021-02-02_pyqgis_previsualiser_images_integrees/)
 - resources fil in QGIS project: <https://github.com/qgis/QGIS/blob/master/images/images.qrc>
 - Qt documentation: <https://doc.qt.io/qt-5/resources.html>
 
@@ -77,3 +79,9 @@ mkdocs serve
 ```
 
 Open your browser on: `http://localhost:8000`
+
+----
+
+## Deployment
+
+The website is monthly regenerated and [deployed on GitHub Pages](https://geotribu.github.io/pyqgis-icons-cheatsheet/) using GitHub Actions. For more details, see the [deploy.yml workflow](https://github.com/geotribu/pyqgis-icons-cheatsheet/blob/51179754fca14ea993d84877714eeeb121cf4fcf/.github/workflows/deploy.yml).

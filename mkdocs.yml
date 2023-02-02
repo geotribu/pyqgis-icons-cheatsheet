@@ -47,8 +47,6 @@ plugins:
         - user-images.githubusercontent.com/**/*.gif
   - social:
       cards: true
-      cards_color:
-        fill: "#3e93a7"
       cards_font: Ubuntu
 
 # Theme

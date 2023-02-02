@@ -80,15 +80,17 @@ theme:
 
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
+      accent: amber
+      primary: green
       scheme: default
-
-
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
+      accent: blue
+      primary: teal
       scheme: slate
       toggle:
         icon: material/brightness-4

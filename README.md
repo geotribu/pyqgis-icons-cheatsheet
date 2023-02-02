@@ -15,7 +15,7 @@ Author: Julien M. (<https://github.com/guts/>, <https://twitter.com/geojulien/>)
 
 ### Related contents
 
-- tutorial (in French): <https://static.geotribu.fr/articles/2021/2021-01-25_pyqgis_previsualiser_images_integrees>
+- tutorial (in French :fr:): <http://geotribu.fr/articles/2021/2021-01-25_pyqgis_previsualiser_images_integrees>
 - resources fil in QGIS project: <https://github.com/qgis/QGIS/blob/master/images/images.qrc>
 - Qt documentation: <https://doc.qt.io/qt-5/resources.html>
 
@@ -52,6 +52,12 @@ python qrc_preview_in_md.py
 The output markdown page is located at `docs/index.md`, overriding the version pushed as project has been started.
 
 ### Website
+
+Copy the `README.MD` into the `docs` folder:
+
+```sh
+cp README.md docs/credits.md
+```
 
 Build:
 

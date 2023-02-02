@@ -38,7 +38,7 @@ if not root.tag == "RCC":
     )
 
 # prepare markdown file
-out_markdown = """---\nhide:\n  - navigation\n---\n\n# QGIS embedded images\n\nRemember how to use it:\n\n```python\nfrom qgis.core import QgsApplication\nfrom qgis.PyQt.QtGui import QIcon, QPixmap\n```\n"""
+out_markdown = """---\ncomments:\n  - true\nhide:\n  - navigation\n---\n\n# QGIS embedded images\n\nRemember how to use it:\n\n```python\nfrom qgis.core import QgsApplication\nfrom qgis.PyQt.QtGui import QIcon, QPixmap\n```\n"""
 md_table_header = (
     "| Preview | Using QgsApplication | QIcon/QPixmap |\n" "| ----------- | ------- | ------- |\n"
 )

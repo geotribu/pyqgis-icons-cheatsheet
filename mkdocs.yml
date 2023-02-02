@@ -97,6 +97,32 @@ theme:
 # Customization
 extra:
   geotribu_main_site: https://static.geotribu.fr/
+  social:
+  - icon: "fontawesome/brands/github-alt"
+    link: "https://github.com/geotribu/"
+    name: "Geotribu on Github"
+  - icon: "fontawesome/brands/mastodon"
+    link: https://mapstodon.space/web/@geotribu
+    name: "Geotribu on Mapstodon"
+  - icon: "fontawesome/brands/twitter"
+    link: "https://twitter.com/geotribu"
+    name: "Geotribu on Twitter"
+  - icon: "fontawesome/brands/linkedin"
+    link: "https://www.linkedin.com/feed/hashtag/?keywords=geotribu"
+    name: "Geotribu on LinkedIn"
+  - icon: "fontawesome/brands/youtube"
+    link: https://www.youtube.com/@geotribu
+    name: "Geotribu on Youtube"
+  - icon: "fontawesome/brands/mailchimp"
+    link: http://eepurl.com/hL0zVr
+    name: "geotribu newsletter newsletter"
+  - icon: fontawesome/solid/paper-plane
+    link: mailto:<geotribu@gmail.com>
+    name: "Contact us by email"
+  - icon: "fontawesome/solid/piggy-bank"
+    link: https://fr.tipeee.com/geotribu
+    name: "Sponsor Geotribu"
+
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"

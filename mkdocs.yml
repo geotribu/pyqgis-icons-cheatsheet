@@ -59,6 +59,8 @@ theme:
 
   features:
     - content.code.copy
+    - navigation.instant
+    - navigation.path
     - navigation.prune
     - navigation.top
     - navigation.tracking

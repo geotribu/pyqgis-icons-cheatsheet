@@ -57,7 +57,6 @@ theme:
 
   features:
     - content.code.copy
-    - navigation.instant
     - navigation.path
     - navigation.top
     - navigation.tracking
@@ -96,6 +95,9 @@ theme:
 
 # Customization
 extra:
+  analytics:
+    provider: matomo
+    matomo_url: !ENV [MKDOCS_MATOMO_URL_BASE, "https://matomo.data-wax.com/"]
   geotribu_main_site: https://static.geotribu.fr/
   social:
   - icon: "fontawesome/brands/github-alt"

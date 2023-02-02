@@ -1,0 +1,26 @@
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(["setDomains", ["*.pyqgis-icons-cheatsheet.geotribu.fr", "*.geotribu.github.io/pyqgis-icons-cheatsheet"]]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+        var u = "{{ config.extra.analytics.matomo_url }}";
+        _paq.push(['setTrackerUrl', u + 'matomo.php']);
+        _paq.push(['setSiteId', '4']);
+        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+        g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+    })();
+
+    /* Wait for page to load and application to mount */
+    document.addEventListener("DOMContentLoaded", function () {
+        location$.subscribe(function (url) {
+            /* Add custom page event tracking here */
+
+
+        })
+    })
+</script>
+<noscript>
+    <p><img src="{{ config.extra.analytics.matomo_url }}matomo.php?idsite=4&amp;rec=1" style="border:0;" alt="" /></p>
+</noscript>

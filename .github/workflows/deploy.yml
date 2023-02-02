@@ -35,13 +35,17 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    if: ${{ github.repository_owner == 'geotribu' }}
+    if: github.event.repository.fork == false
 
     steps:
       - name: Get source code
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+
+      - name: Install system dependencies # for optimize plugin
+        run: |
+          apt install pngquant
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -55,7 +59,7 @@ jobs:
           key: ${{ github.ref }}
           path: .cache
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         env:
           GH_TOKEN_MATERIAL_INSIDERS: ${{ secrets.GH_TOKEN_MATERIAL_INSIDERS }}
         run: |

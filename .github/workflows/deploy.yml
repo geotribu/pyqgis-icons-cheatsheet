@@ -49,6 +49,12 @@ jobs:
           python-version: 3.11
           cache: "pip"
 
+      - name: Cache build dependencies (external assets downloaded)
+        uses: actions/cache@v3
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+
       - name: Install dependencies
         env:
           GH_TOKEN_MATERIAL_INSIDERS: ${{ secrets.GH_TOKEN_MATERIAL_INSIDERS }}
@@ -56,15 +62,16 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install --upgrade -r requirements.txt
 
-      - name: Cache build dependencies (external assets downloaded)
-        uses: actions/cache@v3
-        with:
-          key: ${{ github.ref }}
-          path: .cache
+      - name: Build PyQGIS cheatsheet page
+        run: |
+          python qrc_preview_in_md.py
+          git config --global user.name "Geotribu (Github Action)"
+          git config --global user.email "geotribu@gmail.com"
+          git add docs/index.md
+          git commit -m "Updating PyQGIS cheatsheet"
 
       - name: Build static website
         run: |
-          python qrc_preview_in_md.py 
           mkdocs build --clean --config-file mkdocs.yml --verbose --strict
         env:
           MKDOCS_ENABLE_PLUGIN_CARDS: true

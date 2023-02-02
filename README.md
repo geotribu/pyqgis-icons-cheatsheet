@@ -7,6 +7,18 @@
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 
+Script to convert a remote QRC (Qt Resources Collection files) into a markdown table to preview images. This example covers [QGIS project](https://github.com/qgis/QGIS/).
+
+## Credits
+
+Author: Julien M. (<https://github.com/guts/>, <https://twitter.com/geojulien/>) for [Geotribu collaborative website](http://geotribu.fr).
+
+### Related contents
+
+- tutorial (in French): <https://static.geotribu.fr/articles/2021/2021-01-25_pyqgis_previsualiser_images_integrees>
+- resources fil in QGIS project: <https://github.com/qgis/QGIS/blob/master/images/images.qrc>
+- Qt documentation: <https://doc.qt.io/qt-5/resources.html>
+
 ----
 
 ## Development

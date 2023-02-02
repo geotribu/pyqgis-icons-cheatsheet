@@ -22,6 +22,10 @@ plugins:
   - meta
   - minify:
       minify_html: true
+  - optimize:
+      optimize_jpg_quality: 80
+      optimize_png_speed: 1
+
   - search:
       lang: en
   - privacy:
@@ -104,10 +108,13 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight:
+      anchor_linenums: true
       linenums: true
       use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
   - pymdownx.tilde
   - toc:
       permalink: "#"

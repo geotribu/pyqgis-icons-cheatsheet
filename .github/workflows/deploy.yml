@@ -44,8 +44,10 @@ jobs:
           fetch-depth: 0
 
       - name: Install system dependencies # for optimize plugin
-        run: |
-          apt install pngquant
+        uses: awalsh128/cache-apt-pkgs-action@v1
+        with:
+          packages: pngquant
+          version: 1.0
 
       - name: Set up Python
         uses: actions/setup-python@v4

@@ -39,7 +39,6 @@ plugins:
         # external
         - cdnjs.cloudflare.com/ajax/libs/twemoji/*
         - github.com/**/*.gif
-        - raw.githubusercontent.com/*
         - twemoji.maxcdn.com/*
         - user-images.githubusercontent.com/**/*.gif
   - social:

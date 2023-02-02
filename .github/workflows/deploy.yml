@@ -66,14 +66,14 @@ jobs:
       - name: Build PyQGIS cheatsheet page
         run: |
           python qrc_preview_in_md.py
+          cp README.md docs/credits.md
           git config --global user.name "Geotribu (Github Action)"
           git config --global user.email "geotribu@gmail.com"
-          git add docs/index.md
+          git add docs/*.md
           git commit -m "Updating PyQGIS cheatsheet"
 
       - name: Build static website
         run: |
-          cp README.md docs/credits.md
           mkdocs build --clean --config-file mkdocs.yml --verbose --strict
         env:
           MKDOCS_ENABLE_PLUGIN_CARDS: true

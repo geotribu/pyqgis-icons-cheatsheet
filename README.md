@@ -11,11 +11,16 @@ Script to convert a remote QRC (Qt Resources Collection files) into a markdown t
 
 ## Credits
 
-Author: Julien M. (<https://github.com/guts/>, <https://twitter.com/geojulien/>) for [Geotribu collaborative website](http://geotribu.fr).
+Author: Julien M. (:octopus: [Guts on GitHub](https://github.com/guts/), :bird: [GeoJulien on Twitter](https://twitter.com/geojulien/)) for [Geotribu collaborative website](http://geotribu.fr).
+
+Code under MIT license.  
+Content and methodolgy under [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ### Related contents
 
-- tutorial (in French :fr:): <http://geotribu.fr/articles/2021/2021-01-25_pyqgis_previsualiser_images_integrees>
+- blog posts/tutorials (in French :fr:):
+    - [How to use embedded images in PyQGIS?](http://geotribu.fr/articles/2021/2021-01-19_pyqgis_utiliser_icones_integrees/)
+    - [How to generate a table of embedded images in PyQGIS?](http://geotribu.fr/articles/2021/2021-02-02_pyqgis_previsualiser_images_integrees/)
 - resources fil in QGIS project: <https://github.com/qgis/QGIS/blob/master/images/images.qrc>
 - Qt documentation: <https://doc.qt.io/qt-5/resources.html>
 

@@ -24,7 +24,7 @@ Content and methodolgy under [Attribution-ShareAlike 4.0 International (CC BY-SA
 - blog posts/tutorials (in French :fr:):
     - [How to use embedded images in PyQGIS?](http://geotribu.fr/articles/2021/2021-01-19_pyqgis_utiliser_icones_integrees/)
     - [How to generate a table of embedded images in PyQGIS?](http://geotribu.fr/articles/2021/2021-02-02_pyqgis_previsualiser_images_integrees/)
-- resources fil in QGIS project: <https://github.com/qgis/QGIS/blob/master/images/images.qrc>
+- resources file in QGIS project: <https://github.com/qgis/QGIS/blob/master/images/images.qrc>
 - Qt documentation: <https://doc.qt.io/qt-5/resources.html>
 
 ----

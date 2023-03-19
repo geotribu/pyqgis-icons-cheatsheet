@@ -57,7 +57,7 @@ for prefix in root:
     if prefix.tag == "qresource" and "prefix" in prefix.attrib:
         # set prefix (= level 2 in markdown)
         prefix_name = prefix.attrib.get("prefix")[1:]
-        out_markdown += "\n## {}\n".format(prefix_name.title())
+        out_markdown += f"\n## {prefix_name.title()}\n"
 
         # iterate over files under prefix, after sorting them by filepath
         previous_subfolder = ""

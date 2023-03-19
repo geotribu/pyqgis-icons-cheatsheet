@@ -17,7 +17,8 @@ This project covers [QGIS project](https://github.com/qgis/QGIS/) and generates 
 Author: Julien M. (:octopus: [Guts on GitHub](https://github.com/guts/), :bird: [GeoJulien on Twitter](https://twitter.com/geojulien/)) for [Geotribu collaborative website](http://geotribu.fr).
 
 Code under MIT license.  
-Content and methodolgy under [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/)
+Content and methodolgy under [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).  
+Webiste icon by Arunmozhi, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons.
 
 ### Related contents
 

@@ -39,7 +39,7 @@ if not root.tag == "RCC":
 
 # prepare markdown file
 out_markdown = "---\ncomments:\n  - true"
-out_markdown += "\ndescription: Cheatsheet of embedded images in QGIS with both QIcon and QPixmap syntax. Useful for PyQGIS development, especially Python plugins."
+out_markdown += "\ndescription: Cheatsheet of embedded images in QGIS with both QIcon and QPixmap syntax. Useful for QGIS plugin development."
 out_markdown += "\ntags:\n    - QGIS\n    - PyQGIS\n    - PyQt\n    - Python"
 out_markdown += "\nhide:\n    - tags"
 out_markdown += "\n---\n"

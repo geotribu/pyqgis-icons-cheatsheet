@@ -5,7 +5,7 @@ git+https://${GH_TOKEN_MATERIAL_INSIDERS}@github.com/squidfunk/mkdocs-material-i
 
 # Development
 # -----------------------
-pre-commit>=3,<3.2
+pre-commit>=3,<3.3
 
 # Project requirements
 # -----------------------

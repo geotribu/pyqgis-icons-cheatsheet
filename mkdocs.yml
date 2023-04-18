@@ -157,4 +157,5 @@ markdown_extensions:
 nav:
   - Credits: credits.md
   - Cheatsheet: index.md
+  - Plugin: https://plugins.qgis.org/plugins/pyqgis_resource_browser/
   - Geotribu: http://geotribu.fr/

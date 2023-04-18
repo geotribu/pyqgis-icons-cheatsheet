@@ -30,9 +30,9 @@ plugins:
       lang: en
   - privacy:
       enabled: true
-      external_links_attr_map:
+      links_attr_map:
         target: _blank
-      external_assets_exclude:
+      assets_exclude:
         # mandatory - https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/
         - cdn.jsdelivr.net/npm/mathjax@3/*
         - giscus.app/*

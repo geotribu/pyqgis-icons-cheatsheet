@@ -20,6 +20,12 @@ Code under MIT license.
 Content and methodolgy under [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/).  
 Website [icon by Arunmozhi](https://commons.wikimedia.org/wiki/File:PyQgis_Logo_Illustration.png), CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons.
 
+### Related plugin
+
+There is also a [plugin that allow to browse resources right into QGIS](https://guts.github.io/qgis-plugin-resource-browser/). [Don't miss it](https://plugins.qgis.org/plugins/pyqgis_resource_browser/)!
+
+[Demonstration video of the QGIS plugin PyQGIS Resource Browser](https://user-images.githubusercontent.com/1596222/232868878-1134695b-5dd8-405e-96af-00a2856d4535.webm)
+
 ### Related contents
 
 - blog posts/tutorials (in French :fr:):

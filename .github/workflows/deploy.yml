@@ -76,9 +76,11 @@ jobs:
         run: |
           mkdocs build --clean --config-file mkdocs.yml --verbose --strict
         env:
-          MKDOCS_ENABLE_PLUGIN_CARDS: true
           MKDOCS_ENABLE_PLUGIN_GIT_DATES: true
+          MKDOCS_ENABLE_PLUGIN_OPTIMIZE: true
           MKDOCS_ENABLE_PLUGIN_PRIVACY: true
+          MKDOCS_ENABLE_PLUGIN_SOCIAL: true
+          MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS: true
 
       - name: Setup Pages
         uses: actions/configure-pages@v3

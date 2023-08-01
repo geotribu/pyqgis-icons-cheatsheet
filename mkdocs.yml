@@ -23,9 +23,9 @@ plugins:
   - minify:
       minify_html: true
   - optimize:
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_OPTIMIZE, true]
       optimize_jpg_quality: 80
       optimize_png_speed: 1
-
   - search:
       lang: en
   - privacy:

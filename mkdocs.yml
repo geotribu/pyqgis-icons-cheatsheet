@@ -70,7 +70,10 @@ theme:
     - search.suggest
     - toc.follow
     - toc.integrate
-  font: Ubuntu
+  font:
+    code: Ubuntu Mono
+    text: Ubuntu
+
   language: en
   logo: theme/assets/images/pyqgis.png
   palette:

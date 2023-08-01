@@ -29,7 +29,7 @@ plugins:
   - search:
       lang: en
   - privacy:
-      enabled: true
+      enabled:  !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
       links_attr_map:
         target: _blank
       assets_exclude:

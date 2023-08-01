@@ -48,8 +48,11 @@ plugins:
         - twemoji.maxcdn.com/*
         - user-images.githubusercontent.com/**/*.gif
   - social:
-      cards: true
-      cards_font: Ubuntu
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL, true]
+      cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, true]
+      cards_layout_options:
+        font_family: Ubuntu
+
 
 # Theme
 theme:

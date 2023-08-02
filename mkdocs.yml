@@ -42,6 +42,7 @@ plugins:
         - geotribu.net/*
         # external
         - cdnjs.cloudflare.com/ajax/libs/twemoji/*
+        - github.com/**/badge.svg
         - github.com/**/*.gif
         - img.shields.io/*
         - results.pre-commit.ci/*

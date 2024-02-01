@@ -9,7 +9,7 @@ pre-commit>=3,<4
 
 # Project requirements
 # -----------------------
-mkdocs-minify-plugin<0.8
+mkdocs-minify-plugin<0.9
 mkdocs-git-revision-date-localized-plugin>=1,<2
 
 CairoSVG>=2.5,<3

@@ -107,7 +107,7 @@ extra:
   analytics:
     provider: matomo
     matomo_url: !ENV [MKDOCS_MATOMO_URL_BASE, "https://matomo.data-wax.com/"]
-  geotribu_main_site: https://static.geotribu.fr/
+  geotribu_main_site: https://geotribu.fr/
   social:
   - icon: "fontawesome/brands/github-alt"
     link: "https://github.com/geotribu/"

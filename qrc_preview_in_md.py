@@ -8,7 +8,7 @@
 
     See:
 
-        - tutorial (in French): https://static.geotribu.fr/articles/2021/2021-01-25_pyqgis_previsualiser_images_integrees
+        - tutorial (in French): https://geotribu.fr/articles/2021/2021-01-25_pyqgis_previsualiser_images_integrees
         - https://github.com/qgis/QGIS/blob/master/images/images.qrc
         - https://doc.qt.io/qt-5/resources.html
 """

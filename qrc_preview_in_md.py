@@ -14,14 +14,30 @@
 """
 
 # libraries
+import logging
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from sys import exit
 from urllib.parse import urljoin
 from urllib.request import urlopen
 
+# 3rd party
+from requests import Session
+
+# logging
+logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+
+# network session
+session = Session()
+session.headers.update(
+    {
+        "User-Agent": "pyqgis-icons-cheatsheet/1.0 (+https://github.com/geotribu/pyqgis-icons-cheatsheet)"
+    }
+)
+
 # variables
-resources_url = "https://raw.githubusercontent.com/qgis/QGIS/master/images/images.qrc"
+resources_url = "https://github.com/qgis/QGIS/raw/refs/heads/master/images/images.qrc"
 base_path = (
     "https://raw.githubusercontent.com/qgis/QGIS/refs/heads/master/"  # with backslash
 )
@@ -55,6 +71,7 @@ md_table_row_tpl = """| ![{}]({}){} | `#!python QgsApplication.getThemeIcon("{}"
 
 # iterate over resources
 for prefix in root:
+    logger.info("Processing prefix: {}".format(prefix.attrib.get("prefix")))
     if prefix.tag == "qresource" and "prefix" in prefix.attrib:
         # set prefix (= level 2 in markdown)
         prefix_name = prefix.attrib.get("prefix")[1:]
@@ -65,9 +82,19 @@ for prefix in root:
         for binimg in sorted(
             prefix.findall("file"), key=lambda x: x.text.rsplit("/", 1)[0]
         ):
+
+            logger.info(f" - Processing image: {binimg.text}")
             # build path to image
             img_path_abs = urljoin(base_path, f"{prefix_name}/{binimg.text}")
             img_path_rel = Path(prefix_name, binimg.text)
+
+            # test if remote image is reachable
+            check_remote_img = session.head(img_path_abs)
+            if check_remote_img.status_code != 200:
+                logger.warning(
+                    f"   !-- Image not found (status code: {check_remote_img.status_code}), skipping: {img_path_abs}"
+                )
+                continue
 
             # use subfolder as markdown level 3
             if binimg.text.rsplit("/", 1)[0] != previous_subfolder:
@@ -85,5 +112,5 @@ for prefix in root:
                 img_path_rel,
             )
 
-with Path("docs/index.md").open("w") as io_out:
+with Path("docs/index.md").open("w", encoding="utf-8") as io_out:
     io_out.write(out_markdown)

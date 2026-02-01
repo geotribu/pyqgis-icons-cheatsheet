@@ -42,7 +42,7 @@ There is also a [plugin that allow to browse resources right into QGIS](https://
 
 - Python 3.10+
 - network connection authorized to github.com
-- [Material for Mkdocs Insiders](https://squidfunk.github.io/mkdocs-material/insiders/) (sponsorware) token set as environment variable `GH_TOKEN_MATERIAL_INSIDERS`
+- [Material for Mkdocs](https://squidfunk.github.io/mkdocs-material/)
 - [dependencies for images processing listed on theme documentation](https://squidfunk.github.io/mkdocs-material/setup/dependencies/image-processing/). Typically, on Ubuntu:
 
     ```sh
@@ -56,7 +56,6 @@ Typically on Ubuntu:
 ```sh
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install -U pip setuptools wheel
 python -m pip install -U -r requirements.txt
 pre-commit install
 ```

@@ -10,7 +10,8 @@ copyright: '<span class="copyleft">&copy;</span> Geotribu'
 
 # Repository
 repo_name: !ENV [GITHUB_REPOSITORY, "geotribu/pyqgis-icons-cheatsheet"]
-repo_url: !ENV [MKDOCS_REPO_URL, "https://github.com/geotribu/pyqgis-icons-cheatsheet"]
+repo_url:
+  !ENV [MKDOCS_REPO_URL, "https://github.com/geotribu/pyqgis-icons-cheatsheet"]
 edit_uri: !ENV [MKDOCS_EDIT_URI, "edit/main/content"]
 
 # Plugins
@@ -22,20 +23,15 @@ plugins:
   - meta
   - minify:
       minify_html: true
-  - optimize:
-      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_OPTIMIZE, true]
-      optimize_jpg_quality: 80
-      optimize_png_speed: 1
   - search:
       lang: en
   - privacy:
-      enabled:  !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
+      enabled: !ENV [MKDOCS_ENABLE_PLUGIN_PRIVACY, true]
       links_attr_map:
         target: _blank
       assets_exclude:
         # mandatory - https://squidfunk.github.io/mkdocs-material/setup/ensuring-data-privacy/
         - cdn.jsdelivr.net/npm/mathjax@3/*
-        - giscus.app/*
         # geotribu
         - cdn.geotribu.fr/images/*
         - cdn.geotribu.fr/img/*
@@ -53,7 +49,6 @@ plugins:
       cards: !ENV [MKDOCS_ENABLE_PLUGIN_SOCIAL_CARDS, true]
       cards_layout_options:
         font_family: Ubuntu
-
 
 # Theme
 theme:
@@ -109,31 +104,30 @@ extra:
     matomo_url: !ENV [MKDOCS_MATOMO_URL_BASE, "https://matomo.data-wax.com/"]
   geotribu_main_site: https://geotribu.fr/
   social:
-  - icon: "fontawesome/brands/github-alt"
-    link: "https://github.com/geotribu/"
-    name: "Geotribu on Github"
-  - icon: "fontawesome/brands/mastodon"
-    link: https://mapstodon.space/web/@geotribu
-    name: "Geotribu on Mapstodon"
-  - icon: "fontawesome/brands/twitter"
-    link: "https://twitter.com/geotribu"
-    name: "Geotribu on Twitter"
-  - icon: "fontawesome/brands/linkedin"
-    link: "https://www.linkedin.com/feed/hashtag/?keywords=geotribu"
-    name: "Geotribu on LinkedIn"
-  - icon: "fontawesome/brands/youtube"
-    link: https://www.youtube.com/@geotribu
-    name: "Geotribu on Youtube"
-  - icon: "fontawesome/brands/mailchimp"
-    link: http://eepurl.com/hL0zVr
-    name: "geotribu newsletter newsletter"
-  - icon: fontawesome/solid/paper-plane
-    link: mailto:<geotribu@gmail.com>
-    name: "Contact us by email"
-  - icon: "fontawesome/solid/piggy-bank"
-    link: https://fr.tipeee.com/geotribu
-    name: "Sponsor Geotribu"
-
+    - icon: "fontawesome/brands/github-alt"
+      link: "https://github.com/geotribu/"
+      name: "Geotribu on Github"
+    - icon: "fontawesome/brands/mastodon"
+      link: https://mapstodon.space/web/@geotribu
+      name: "Geotribu on Mapstodon"
+    - icon: "fontawesome/brands/twitter"
+      link: "https://twitter.com/geotribu"
+      name: "Geotribu on Twitter"
+    - icon: "fontawesome/brands/linkedin"
+      link: "https://www.linkedin.com/feed/hashtag/?keywords=geotribu"
+      name: "Geotribu on LinkedIn"
+    - icon: "fontawesome/brands/youtube"
+      link: https://www.youtube.com/@geotribu
+      name: "Geotribu on Youtube"
+    - icon: "fontawesome/brands/mailchimp"
+      link: http://eepurl.com/hL0zVr
+      name: "geotribu newsletter newsletter"
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:<geotribu@gmail.com>
+      name: "Contact us by email"
+    - icon: "fontawesome/solid/piggy-bank"
+      link: https://fr.tipeee.com/geotribu
+      name: "Sponsor Geotribu"
 
 extra_css:
   - "theme/assets/stylesheets/extra.css"

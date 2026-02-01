@@ -13,7 +13,6 @@
         - https://doc.qt.io/qt-5/resources.html
 """
 
-
 # libraries
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -23,7 +22,9 @@ from urllib.request import urlopen
 
 # variables
 resources_url = "https://raw.githubusercontent.com/qgis/QGIS/master/images/images.qrc"
-base_path = "https://raw.githubusercontent.com/qgis/QGIS/master/"  # with backslash
+base_path = (
+    "https://raw.githubusercontent.com/qgis/QGIS/refs/heads/master/"  # with backslash
+)
 pymd_attr_list = "{: loading=lazy width=100px }"
 
 # parse file

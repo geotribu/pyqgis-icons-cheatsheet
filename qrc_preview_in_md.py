@@ -1,4 +1,4 @@
-#! python3  # noqa: E265
+#! python3
 
 """
     Script to convert a remote QRC (Qt Resources Collection files) into a markdown table to \
